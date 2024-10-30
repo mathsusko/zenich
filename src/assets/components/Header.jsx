@@ -49,7 +49,7 @@ export default function Header() {
         animate={controls}
       >
         <img
-          src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1729951386/logo_hx5nu4.png"
+          src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730258114/logoHeader_n91rrc.png"
           alt="Logo"
         />
         <div className={styles.nav}>

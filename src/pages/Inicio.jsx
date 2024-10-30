@@ -42,8 +42,52 @@ export default function Inicio() {
 
   return (
     <section>
-      <article className={styles.bannerHero}></article>
+      <article className={styles.bannerHero}>
+        <div className={styles.hero}>
+          <div className={styles.img}>
+            <img
+              src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730299359/logoHero_yxtm2l.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </article>
+      <article className={styles.teste}>
+        <div className={styles.extra}>
+          <img
+            src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730258463/Triade_mb0foi.png"
+            alt=""
+          />
+          <div className={styles.cardzin}>
+            <div className={styles.head}>
+              <p>Me siga</p>
+              <div className={styles.sociais}>
+                <a href="#">
+                  <InstagramLogo size={32} />
+                </a>
+                <a href="#">
+                  <YoutubeLogo size={32} />
+                </a>
+                <a href="#">
+                  <SoundcloudLogo size={32} />
+                </a>
+              </div>
+            </div>
+            <div className={styles.button}>
+              <a href="#contato">ENTRAR EM CONTATO</a>
+            </div>
+          </div>
+          <img
+            src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730258466/code_hfhhq3.png"
+            alt=""
+          />
+        </div>
+      </article>
       <article className={styles.content}>
+        <div className={styles.bgFixed}>
+          <div className={styles.circleBlue}></div>
+          <div className={styles.circlePurple}></div>
+        </div>
         <div className={styles.panel}>
           <p>Oficial Website</p>
           <p>©</p>
@@ -54,7 +98,7 @@ export default function Inicio() {
         </div>
 
         {/* Adiciona a classe 'visible' condicionalmente */}
-        <div
+        {/* <div
           className={`${styles.music} ${isVisible ? styles.visible : ''}`}
           ref={musicRef}
         >
@@ -86,6 +130,7 @@ export default function Inicio() {
 
               <button onClick={handleDiscografia}>Ver discografia</button>
             </div>
+
             <div className={styles.secondColumn}>
               <div className={styles.boxMusic}></div>
 
@@ -95,103 +140,114 @@ export default function Inicio() {
               ></audio>
             </div>
           </div>
+        </div> */}
+
+        <div className={styles.youtube}>
+          <div className={styles.pill}>
+            <p>ASSISTA MINHA LIVE</p>
+          </div>
+          <div className={styles.video}>
+            <iframe
+              src="https://www.youtube.com/embed/8UfAsDEaNIA"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
 
         <div className={styles.bio}>
-          <div className={styles.logoOne}>
-            <img src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1729951386/logo_hx5nu4.png" />
-          </div>
-
-          <div className={styles.bioDescription}>
-            <h2>Biografia</h2>
-            <p>
-              Zenich é o projeto por detrás da mente idealizadora de Leoni Stevanato,
-              brasileiro, que decidiu escolher o Psy Trance como propósito primordial em
-              sua vida.
-            </p>
-            <p>
-              Após algum tempo a partir do momento em que conheceu a música eletrônica,
-              nasceu o projeto Zenich, que traz uma ideia e visão de evolução como seres,
-              em busca de novas possibilidades e potencialidades. Zenich atualmente é um
-              dos integrantes do Music Lab, escola de produção musical e discotecagem com
-              referência ao PsyTrance, onde desde 2023 está em constante evolução através
-              de seus estudos e pesquisas. Seguindo em busca continua por conhecimento,
-              objetivando trazer uma identidade sonora única para seu projeto.
-            </p>
-            <p>
-              Em seu DJ SET, a partir de batidas que mais se assemelham ao Full On, que
-              variam entre 144 à 148 bpm’s, busca trazer momentos de energia, mas também
-              de introspecção, trazendo uma ambiência perfeita para conduzir sua
-              experiência psicodélica.
-            </p>
-            <p>
-              Tendo como a música e a dança sendo uma forma de meditação ativa e
-              celebração da vida, como também ferramenta para expansão da consciência e
-              busca pela paz interior, Zenich te deixa o convite para essa imersão nesta
-              jornada psicodélica.
-            </p>
-          </div>
-        </div>
-
-        <div className={styles.cta}>
-          <div className={styles.ctaContent}>
-            <div className={styles.colOne}>
-              <h2>Vamos Conversar?</h2>
-              <p>
-                Se você está pronto para levar seu próximo evento a um novo patamar ou
-                deseja discutir uma parceria que vai marcar a cena do Psy Trance, entre em
-                contato comigo! Estou ansioso para ouvir suas ideias e colaborar para
-                criar algo realmente especial.
-              </p>
+          <div className={styles.firstRow}>
+            <div className={styles.img}>
+              <img
+                src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730302102/ohome_d8azpo.png"
+                alt=""
+              />
             </div>
-
-            <div className={styles.colTwo}>
-              <div className={styles.contacts}>
-                <h2>Contatos</h2>
-                <div className={styles.contact}>
-                  <div className={styles.wpp}>
-                    <WhatsappLogo size={24} />
-                    <p>WhatsApp</p>
-                  </div>
-                  <p>a setar</p>
-                </div>
-
-                <div className={styles.contact}>
-                  <div className={styles.wpp}>
-                    <EnvelopeOpen size={24} />
-                    <p>E-mail</p>
-                  </div>
-                  <p>setar</p>
+            
+            <div className={styles.text}>
+              <div className={styles.title}>
+                <img
+                  src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730302454/text_tkx6v7.png"
+                  alt=""
+                />
+                <div className={styles.subtitle}>
+                  <p>LEONI STEVANATO</p>
+                  <p>TRIADE TRANCE</p>
+                  <p>BRASILEIRO</p>
                 </div>
               </div>
 
-              <div className={styles.icons}>
-                <p>Redes sociais/Plataformas Musicais</p>
-                <div className={styles.icon}>
-                  <a
-                    href="https://www.instagram.com/zenich_music/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.instagramLink}
-                  >
-                    <InstagramLogo size={32} />
-                  </a>
-                  <a
-                    href="https://soundcloud.com/zenich_music"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.instagramLink}
-                  >
-                    <SoundcloudLogo size={32} />
-                  </a>
-                  <a
-                    href="https://youtube.com/@zenich_music"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.instagramLink}
-                  >
-                    <YoutubeLogo size={32} />
-                  </a>
+              <div className={styles.description}>
+                <p>
+                  Zenich é o projeto idealizado por Leoni Stevanato, um brasileiro que
+                  encontrou no Psy Trance seu propósito de vida, transformando essa paixão
+                  em uma busca constante por evolução e autodescoberta. A partir de sua
+                  imersão na música eletrônica, Zenich ganhou forma com o compromisso de
+                  explorar novas possibilidades e potencialidades como ser humano.
+                  Integrante do Music Lab desde 2023, uma escola de referência em produção
+                  musical e discotecagem no universo Psy Trance, ele se dedica a estudos e
+                  pesquisas para criar uma identidade sonora única. Seus sets, com batidas
+                  de Full On entre 144 e 148 bpm, oferecem uma mistura de energia e
+                  introspecção, conduzindo o público a uma experiência psicodélica de
+                  conexão e paz interior. Para Zenich, música e dança são formas de
+                  meditação ativa e celebração, ferramentas que expandem a consciência e
+                  fortalecem a busca pelo equilíbrio interior.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.secondRow}>
+            <img
+              src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730302769/bar_y4wqlx.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className={styles.contact}>
+          <div className={styles.rows}>
+            <div className={styles.rowOne}>
+              <img
+                src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730303650/contact_kuazxz.png"
+                alt=""
+              />
+            </div>
+            <div className={styles.rowTwo}>
+              <div className={styles.colOne}>
+                <div className={styles.desc}>
+                  <p>
+                    Se você está pronto para levar seu próximo evento a um novo patamar ou
+                    deseja discutir uma parceria que vai marcar a cena do Psy Trance,
+                    entre em contato comigo! Estou ansioso para ouvir suas ideias e
+                    colaborar para criar algo realmente especial.
+                  </p>
+                </div>
+                <div className={styles.img}>
+                  <img
+                    src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730304248/curado_qicz70.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className={styles.colTwo}>
+                <img
+                  src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730304490/cardDesk_yru5ym.png"
+                  alt=""
+                />
+                <div className={styles.sociaiss}>
+                  <p>Redes sociais/Plataformas músicais</p>
+                  <div className={styles.icones}>
+                    <a href="#">
+                      <InstagramLogo size={32} />
+                    </a>
+                    <a href="#">
+                      <YoutubeLogo size={32} />
+                    </a>
+                    <a href="#">
+                      <SoundcloudLogo size={32} />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

@@ -4,17 +4,32 @@ import styles from './Discografia.module.css'
 // Define o conteúdo das músicas com URL de áudio
 const musicData = [
   {
-    title: 'Música',
+    title: 'Music Lab Sessions Halloween',
     production: 'Zenich',
-    imageUrl: '',
+    imageUrl:
+      'https://res.cloudinary.com/dio2dnpmn/image/upload/v1730468360/capaSet_qfuqob.jpg',
     audioUrl:
-      'https://res.cloudinary.com/dio2dnpmn/video/upload/v1727877279/MP3_-_Dezco_-_Ascend_Dollmaker_Bootleg_f5k5ov.mp',
-    spotifyUrl:
-      'https://res.cloudinary.com/dio2dnpmn/image/upload/v1725753882/dollmaker/reakd3tsuhlxespv5e9s.png',
+      'https://res.cloudinary.com/dio2dnpmn/video/upload/v1730468609/audioTriadeLab_ae4aft.wav',
+    youtubeUrl:
+      'https://res.cloudinary.com/dio2dnpmn/image/upload/v1730469346/youtube-logo-youtube-icon-transparent-free-png_1_nghnar.png',
     soundcloudUrl:
       'https://res.cloudinary.com/dio2dnpmn/image/upload/v1725753882/dollmaker/guwqklp7omf9amvxm3ox.png',
-    spotify: '',
-    sound: ''
+    youtube: 'https://youtube.com/@zenich_music',
+    sound: 'https://soundcloud.com/zenich_music'
+  },
+  {
+    title: 'Set Pocket 2024',
+    production: 'Zenich',
+    imageUrl:
+      'https://res.cloudinary.com/dio2dnpmn/image/upload/v1730469878/IMG_0465_1_is8eju.png',
+    audioUrl:
+      'https://res.cloudinary.com/dio2dnpmn/video/upload/v1730469971/Previa_Set_2_xukxrr.wav',
+    youtubeUrl:
+      'https://res.cloudinary.com/dio2dnpmn/image/upload/v1730469346/youtube-logo-youtube-icon-transparent-free-png_1_nghnar.png',
+    soundcloudUrl:
+      'https://res.cloudinary.com/dio2dnpmn/image/upload/v1725753882/dollmaker/guwqklp7omf9amvxm3ox.png',
+    youtube: 'https://youtube.com/@zenich_music',
+    sound: 'https://soundcloud.com/zenich_music'
   }
 
   // Adicione mais músicas conforme necessário
@@ -61,14 +76,23 @@ export default function Discografia() {
                     />
                   </audio>
 
-                  <div className={styles.cta}>
-                    <a href={music.spotify}>
+                  <div
+                    className={styles.cta}
+                    target="_blank"
+                  >
+                    <a
+                      href={music.youtube}
+                      target="_blank"
+                    >
                       <img
-                        src={music.spotifyUrl}
-                        alt="Spotify"
+                        src={music.youtubeUrl}
+                        alt="Youtube"
                       />
                     </a>
-                    <a href={music.sound}>
+                    <a
+                      href={music.sound}
+                      target="_blank"
+                    >
                       <img
                         src={music.soundcloudUrl}
                         alt="SoundCloud"

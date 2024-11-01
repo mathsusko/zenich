@@ -40,6 +40,13 @@ export default function Inicio() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const contatoRef = useRef(null)
+
+  const handleScrollToContato = (event) => {
+    event.preventDefault()
+    contatoRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <section>
       <article className={styles.bannerHero}>
@@ -61,20 +68,35 @@ export default function Inicio() {
           <div className={styles.cardzin}>
             <div className={styles.head}>
               <p>Me siga</p>
+
               <div className={styles.sociais}>
-                <a href="#">
+                <a
+                  href="https://www.instagram.com/zenich_music/"
+                  target="_blank"
+                >
                   <InstagramLogo size={32} />
                 </a>
-                <a href="#">
+                <a
+                  href="https://youtube.com/@zenich_music"
+                  target="_blank"
+                >
                   <YoutubeLogo size={32} />
                 </a>
-                <a href="#">
+                <a
+                  href="https://soundcloud.com/zenich_music"
+                  target="_blank"
+                >
                   <SoundcloudLogo size={32} />
                 </a>
               </div>
             </div>
             <div className={styles.button}>
-              <a href="#contato">ENTRAR EM CONTATO</a>
+              <a
+                href="#contato"
+                onClick={handleScrollToContato}
+              >
+                ENTRAR EM CONTATO
+              </a>
             </div>
           </div>
           <img
@@ -148,7 +170,7 @@ export default function Inicio() {
           </div>
           <div className={styles.video}>
             <iframe
-              src="https://www.youtube.com/embed/8UfAsDEaNIA"
+              src="https://www.youtube.com/embed/wCWW45-BFL8?start=2"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
@@ -163,7 +185,7 @@ export default function Inicio() {
                 alt=""
               />
             </div>
-            
+
             <div className={styles.text}>
               <div className={styles.title}>
                 <img
@@ -205,7 +227,10 @@ export default function Inicio() {
           </div>
         </div>
 
-        <div className={styles.contact}>
+        <div
+          ref={contatoRef}
+          className={styles.contact}
+        >
           <div className={styles.rows}>
             <div className={styles.rowOne}>
               <img
@@ -238,13 +263,22 @@ export default function Inicio() {
                 <div className={styles.sociaiss}>
                   <p>Redes sociais/Plataformas músicais</p>
                   <div className={styles.icones}>
-                    <a href="#">
+                    <a
+                      href="https://www.instagram.com/zenich_music/"
+                      target="_blank"
+                    >
                       <InstagramLogo size={32} />
                     </a>
-                    <a href="#">
+                    <a
+                      href="https://youtube.com/@zenich_music"
+                      target="_blank"
+                    >
                       <YoutubeLogo size={32} />
                     </a>
-                    <a href="#">
+                    <a
+                      href="https://soundcloud.com/zenich_music"
+                      target="_blank"
+                    >
                       <SoundcloudLogo size={32} />
                     </a>
                   </div>

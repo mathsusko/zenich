@@ -507,7 +507,7 @@ section .content .panel {
 
 @media screen and (max-width: 1130px) {
   .contact .rows {
-    padding: 32px;
+
   }
   .rows .rowTwo {
     display: flex;

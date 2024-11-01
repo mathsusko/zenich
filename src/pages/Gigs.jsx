@@ -4,22 +4,20 @@ import { motion } from 'framer-motion'
 
 const GIGS = [
   {
-    date: '20 ABRIL',
-    festival: 'NOME DO FESTIVAL',
+    imageUrl:
+      'https://res.cloudinary.com/dio2dnpmn/image/upload/v1730472836/WhatsApp_Image_2024-10-25_at_13.42.00_1_gzoyzu.png',
+    date: '26/OUTUBRO',
+    festival: 'HALLOWEEN - MUSIC LAB',
     location: 'Curitiba-PR 🇧🇷',
-    ticketLink: 'https://exemplo.com/ingresso1' // Link do ingresso
+    ticketLink: '' // Link do ingresso
   },
   {
-    date: '20 ABRIL',
-    festival: 'NOME DO FESTIVAL',
+    imageUrl:
+      'https://res.cloudinary.com/dio2dnpmn/image/upload/v1730473038/IMG_0465_2_eoya0v.png',
+    date: '--/--',
+    festival: 'EVENTO POCKET SESSIONS - MUSIC LAB',
     location: 'Curitiba-PR 🇧🇷',
-    ticketLink: 'https://exemplo.com/ingresso2' 
-  },
-  {
-    date: '20 ABRIL',
-    festival: 'NOME DO FESTIVAL',
-    location: 'Curitiba-PR 🇧🇷',
-    ticketLink: 'https://exemplo.com/ingresso3' // Link do ingresso
+    ticketLink: ''
   }
 ]
 
@@ -44,12 +42,10 @@ export default function Gigs() {
               viewport={{ once: true, margin: '0px 0px -200px 0px' }}
               variants={variants}
             >
-              <div className={styles.fotoGigs}>
-                <img
-                  src=""
-                  alt=""
-                />
-              </div>
+              <div
+                className={styles.fotoGigs}
+                style={{ backgroundImage: `url(${gig.imageUrl})` }}
+              ></div>
 
               <div className={styles.info}>
                 <div className={styles.dataGigs}>

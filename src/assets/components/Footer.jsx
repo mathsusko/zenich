@@ -14,9 +14,7 @@ export default function Footer() {
   // Para URLs externas, use window.location.href
   const handleInsta = () =>
     (window.location.href = 'https://www.instagram.com/zenich_music/')
-  const handleSpotify = () =>
-    (window.location.href =
-      'https://open.spotify.com/intl-pt/artist/7dGmK4sImWkq5ClORKQwIL?si=dofDHcXkQMayEpcQF8D')
+  const handleYoutube = () => (window.location.href = 'https://youtube.com/@zenich_music')
   const handleSoundcloud = () =>
     (window.location.href = 'https://soundcloud.com/zenich_music')
 
@@ -25,7 +23,6 @@ export default function Footer() {
       <div className={styles.footer}>
         <div className={styles.pages}>
           <div className={styles.brothers}>
-            
             <div className={styles.page}>
               <h2>Páginas</h2>
               <p onClick={handleInicio}>Início</p>
@@ -37,7 +34,7 @@ export default function Footer() {
             <div className={styles.page}>
               <h2>Redes</h2>
               <p onClick={handleInsta}>Instagram</p>
-              <p onClick={handleSpotify}>Spotify</p>
+              <p onClick={handleYoutube}>Youtube</p>
               <p onClick={handleSoundcloud}>SoundCloud</p>{' '}
               {/* Corrigido de "SoundClound" para "SoundCloud" */}
             </div>

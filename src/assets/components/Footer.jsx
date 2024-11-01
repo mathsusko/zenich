@@ -48,7 +48,7 @@ export default function Footer() {
                 comunicação entre os envolvidos.
               </p>
               <button className={styles.button}>
-                <a href="#">
+                <a href="https://www.instagram.com/dgorganism/">
                   CONTRATAR SERVIÇOS{' '}
                   <img
                     src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730258442/ARROW_f0fpaf.png"
@@ -59,7 +59,10 @@ export default function Footer() {
             </div>
 
             <div className={styles.marca}>
-              <a href="https://www.instagram.com/dgorganism/">
+              <a
+                href="https://www.instagram.com/dgorganism/"
+                target="_blank"
+              >
                 <img
                   src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730258437/digitalOrganism_eyjken.png"
                   alt=""

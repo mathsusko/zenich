@@ -59,7 +59,7 @@ export default function Footer() {
             </div>
 
             <div className={styles.marca}>
-              <a href="#">
+              <a href="https://www.instagram.com/dgorganism/">
                 <img
                   src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730258437/digitalOrganism_eyjken.png"
                   alt=""

@@ -402,7 +402,9 @@ section .content .panel {
 .bio {
   display: flex;
   flex-direction: column;
-  margin-top: 164px;
+  margin-top: 164px !important;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 .bio .firstRow {
   display: flex;
@@ -414,6 +416,9 @@ section .content .panel {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.firstRow .text .title img {
+  width: 100%;
 }
 .text .description {
   text-align: justify;
@@ -493,6 +498,7 @@ section .content .panel {
   gap: 12px;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 .sociaiss .icones {
   display: flex;

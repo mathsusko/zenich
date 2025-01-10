@@ -48,7 +48,7 @@ export default function Footer() {
                 comunicação entre os envolvidos.
               </p>
               <button className={styles.button}>
-                <a href="https://www.instagram.com/dgorganism/">
+                <a href="https://wa.me/5541996926727">
                   CONTRATAR SERVIÇOS{' '}
                   <img
                     src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730258442/ARROW_f0fpaf.png"
@@ -60,7 +60,7 @@ export default function Footer() {
 
             <div className={styles.marca}>
               <a
-                href="https://www.instagram.com/dgorganism/"
+                href="https://www.digitalorganism.com.br/"
                 target="_blank"
               >
                 <img
@@ -75,7 +75,7 @@ export default function Footer() {
         <div className={styles.copy}>
           <p>
             © Copyright 2024, Todos direitos reservados por{' '}
-            <a href="https://www.instagram.com/dgorganism/">Digital Organism</a>
+            <a href="https://www.digitalorganism.com.br/">Digital Organism</a>
           </p>
         </div>
       </div>

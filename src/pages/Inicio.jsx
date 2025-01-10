@@ -234,7 +234,7 @@ export default function Inicio() {
           <div className={styles.rows}>
             <div className={styles.rowOne}>
               <img
-                src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730303650/contact_kuazxz.png"
+                src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1736523961/Zenich/cta/fftxmgkkphehmjb3wd7o.png"
                 alt=""
               />
             </div>
@@ -257,7 +257,7 @@ export default function Inicio() {
               </div>
               <div className={styles.colTwo}>
                 <img
-                  src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730304490/cardDesk_yru5ym.png"
+                  src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1736523961/Zenich/cta/o6scnyw5cdguzblpj3pk.png"
                   alt=""
                 />
                 <div className={styles.sociaiss}>

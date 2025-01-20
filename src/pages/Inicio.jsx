@@ -62,7 +62,7 @@ export default function Inicio() {
       <article className={styles.teste}>
         <div className={styles.extra}>
           <img
-            src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730258463/Triade_mb0foi.png"
+            src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1737405841/labmusic_ybswpt.png"
             alt=""
           />
           <div className={styles.cardzin}>
@@ -189,12 +189,11 @@ export default function Inicio() {
             <div className={styles.text}>
               <div className={styles.title}>
                 <img
-                  src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730302454/text_tkx6v7.png"
+                  src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1737406334/ZENICH_PSY_TRANCE_gkoxdd.png"
                   alt=""
                 />
                 <div className={styles.subtitle}>
                   <p>LEONI STEVANATO</p>
-                  <p>TRIADE TRANCE</p>
                   <p>BRASILEIRO</p>
                 </div>
               </div>
@@ -234,7 +233,7 @@ export default function Inicio() {
           <div className={styles.rows}>
             <div className={styles.rowOne}>
               <img
-                src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1736523961/Zenich/cta/fftxmgkkphehmjb3wd7o.png"
+                src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1737406478/Frame_136_reqpsq.png"
                 alt=""
               />
             </div>
@@ -250,7 +249,7 @@ export default function Inicio() {
                 </div>
                 <div className={styles.img}>
                   <img
-                    src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730304248/curado_qicz70.png"
+                    src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1737405841/labmusic_ybswpt.png"
                     alt=""
                   />
                 </div>

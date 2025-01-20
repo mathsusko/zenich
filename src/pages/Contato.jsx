@@ -16,7 +16,7 @@ export default function Contato() {
           <div className={styles.rows}>
             <div className={styles.rowOne}>
               <img
-                src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1736523961/Zenich/cta/fftxmgkkphehmjb3wd7o.png"
+                src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1737406478/Frame_136_reqpsq.png"
                 alt=""
               />
             </div>
@@ -32,7 +32,7 @@ export default function Contato() {
                 </div>
                 <div className={styles.img}>
                   <img
-                    src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730304248/curado_qicz70.png"
+                    src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1737405841/labmusic_ybswpt.png"
                     alt=""
                   />
                 </div>
